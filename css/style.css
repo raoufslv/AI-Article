@@ -1,0 +1,592 @@
+
+                                        /* por toutes les elements html */
+
+*{
+    margin: 0;  /* remove margins */
+    padding: 0;    /*removes the padding*/
+    box-sizing: border-box;  /*removes the border*/
+}
+
+                                        /* pour tous les headers des pages */
+
+header{
+    width: 90%;   /*sets the width of the header*/
+    height: 90vh;   /*sets the height of the header*/
+    padding: 20px; /*sets the padding of the header*/
+    margin: 40px auto; /*sets the margin of the header*/
+    border-radius: 20px; /*sets the border radius of the header*/
+} 
+
+
+/* mettre sur header background pour les pages */
+
+#home{
+    background-image: url(../images/background2.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;   /*sets the background image repeat*/
+    background-size: cover;  /*sets the background image size*/
+}
+
+#Machine-Learning-page{
+    background-image: url(../images/machine-learning.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+#Deep-learning-page{
+    background-image: url(../images/brain.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+#Computer-vision-page{
+    background-image: url(../images/computer\ vision.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+#NLP-page{
+    background-image: url(../images/NLP.jpeg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.dropdown li{  /*pour les liens de dropdown navbar*/
+    list-style-type: none;  /*removes the list style*/
+    margin-bottom: 10px;   /*sets the margin of the li*/
+    transition: 0.3s ease;  /*sets the transition of the li*/
+}
+
+.dropdown {  /*pour les liens de dropdown navbar*/
+    background-color: rgba(75, 130, 194, 0.2);  /*sets the background color of the dropdown*/
+    width: 210px;   /*sets the width of the dropdown*/
+    padding: 20px;   /*sets the padding of the dropdown*/
+    position: absolute;     /*sets the position of the dropdown*/   
+    display: none;   /*sets the display of the dropdown*/
+    border-radius: 8px;  /*sets the border radius of the dropdown*/
+}
+
+
+a#les-sousDomains{  
+    position: relative;   /*sets the position of the a*/
+}
+
+.services:hover .dropdown {  /*making the dropdown appear when hovering over the services link*/
+    display: block;  /*sets the display of the dropdown after the hover*/
+}
+
+.nav-bar{     
+    width: 100%;     /*sets the width of the navbar*/
+    height: 80px;    /*sets the height of the navbar*/
+    background-color: rgba(75, 130, 194, 0.2);  /*sets the background color of the navbar*/
+    backdrop-filter: blur(5px);    /*sets the blur of the navbar*/
+    border-radius: 20px;            /*sets the border radius of the navbar*/
+    display: flex;                  /*sets the display of the navbar*/
+    justify-content: space-between;     /*sets the justify content of the navbar*/
+    align-items: center;               /*sets the align items of the navbar*/
+}
+
+.nav-left a img{    /*sets the logo of the navbar*/
+    width: 50px;     /*sets the width of the logo*/
+    height: 50px;     /*sets the height of the logo*/
+    margin-left: 20px;  /*sets the margin of the logo*/
+}
+
+.nav-right{  /*sets the navbar right*/
+    display: flex;  /*sets the display of the navbar right*/
+    justify-content: space-around;  /*sets the justify content of the navbar right to make space around them*/
+    align-items: center;   /*sets the align items of the navbar right to center*/
+}
+
+.nav-right a{    /*sets the links of the navbar right*/
+    font-family : 'Roboto', sans-serif;  /*sets the font family of the links of the navbar right*/
+    margin-right: 60px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right a#seleced, a#seleced1, a:hover{   /*sets the color of the links of the navbar right when hovering over them except the selected ones*/
+    color: #4b82c2;
+}
+
+.headline-container{   /*sets the container for the headline and placing it on it's place (home page)*/
+    color: aliceblue;
+    width: 590px;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 40px;
+    background-color: rgba(75, 130, 194, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    left: 41%;
+}
+
+.headline2-container{    /*sets the container for the headline and placing it on it's place (sous-domaines page)*/
+    color: rgb(182, 190, 197);
+    width: 400px;
+    padding: 40px;
+    position: relative;
+    left: -38px;
+}
+
+.headline{  /*sets the family font of the title of the pages*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.headline-container p{  /*sets the family font of the text of the headline pages*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.btn{ /*sets the family font of the button (savoir plus)*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b82c2;
+    text-decoration: none;
+}
+
+                                    /*pour the main of the page */
+
+main{  /*sets the margin main of the page*/
+    margin: 0 80px;
+    margin: 20px 80px;
+    padding: 20px 40px;
+    background-color: rgba(75, 130, 194, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+html{  /*sets the background of the pages */
+    scroll-behavior: smooth;  /*sets the scroll behavior of the page run smoothely*/
+    background-image: url(../images/abstract-background-with-low-poly-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.diffirent-containers{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.diffirent-containers h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.diffirent-containers h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.diffirent-containers p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.circles-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle-container{
+    background-color: rgba(75, 130, 194, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.diffirent-containers img{
+    display: block;
+    margin: auto;
+}
+
+img.pictures{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 700px;
+}
+
+.squars-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diffirent-containers ul{
+    list-style-type: disc;
+    margin: 10px 0px 0px 30px;
+    padding: 0;
+}
+
+
+#formule1, #formule2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.two-columns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}  
+
+.colum:nth-child(2){
+    border-left: 2px solid black;
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+.colum p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.colum h3{
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clustering-graphes img{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    display: block;
+    margin: 20px auto;
+    height: 280px;
+    width: 390px;
+}
+
+.row1-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.colum img{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.squar{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(75, 130, 194, 0.3);
+    border-radius: 0px;
+    margin: 20px 0px;
+    padding: 10px;
+    width: 270px;
+    height: 220px;
+    text-align: left;
+}
+
+.squars{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 4px solid rgba(75, 130, 194, 0.3);
+    margin: 20px 60px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.squars h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.squars p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.squars ul{
+    list-style-type: disc;
+    margin: 10px 0px 0px 20px;
+    padding: 0;
+}
+
+.squars li:first-child{
+    color: red;
+}
+
+.circlegraph{
+    height: 200px;
+    float: right;
+}
+
+
+
+.definition-container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.definition-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.definition-container figure{
+    margin-top: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    padding: 4px;
+    margin: auto;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.definition-container figure img{
+    width: 100%;
+    height: 220px;
+}
+
+.definition-container figure figcaption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: italic;
+    margin-top: 10px;
+}
+
+.rectangle-container{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    
+}
+
+main h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: rgba(75, 130, 194, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 600px;
+
+}
+
+.sous-domain-container{
+    width: 600px;
+    height: 190px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.sous-domain-container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sous-domain-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sous-domain-container img{
+    margin: 10px;
+    float: left;
+    width: 250px;
+    height: 160px;
+    position: relative;
+    top: -5px;
+}
+
+.les-sous-domain-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.row-tools-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.one-tool-container{
+    width: 200px;
+    height: 90px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-tool-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(75, 130, 194, 0.7);
+    backdrop-filter: blur(5px);
+    border: thick solid rgba(175, 200, 228, .6);
+    border-top-right-radius: 90%;
+    border-top-left-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: -30px;
+}
+
+.footer-containers{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 50px;
+}
+
+.footer-containers img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.footer-containers ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-containers li{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.social-media-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+
+#explor{
+    margin: 0 auto;
+}
+
+#gmail1, #gmail2{
+    width: 28px;
+    height: 28px;
+}
+
+.gmail-a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-containers h5{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.footer-containers h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(175, 200, 228);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.footer-containers a:hover{
+    color: #ffffff;
+}
+
+.top {
+    --offset: 100px;
+    position: sticky;
+    bottom: 30px; 
+    left: 1450px;
+    margin-top: calc(100vh + var(--offset));
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 40%;
+  }
