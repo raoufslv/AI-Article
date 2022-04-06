@@ -9,98 +9,113 @@
 
                                         /* pour tous les headers des pages */
 
-header{   /*costumizer le header*/
-    width: 90%;  
-    height: 90vh; /* 90vh = 90% de la hauteur de la fenetre */
-    padding: 20px; /* ajouter un padding */  
-    margin: 40px auto;  /* ajouter un margin en top et bottom*/  /* auto pour la centre */
-    border-radius: 20px;   /* ajouter un border radius */
-    background-position: center;  /*pour centrer le background*/
-    background-repeat: no-repeat;  /*pour ne pas repeter le background*/
-    background-size: cover;    /*pour que le background prenne toute la place*/
+header{
+    width: 90%;   /*sets the width of the header*/
+    height: 90vh;   /*sets the height of the header*/
+    padding: 20px; /*sets the padding of the header*/
+    margin: 40px auto; /*sets the margin of the header*/
+    border-radius: 20px; /*sets the border radius of the header*/
 } 
 
-                                    /* ajouter des background pour les headers des pages*/
+
+/* mettre sur header background pour les pages */
 
 #home{
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background2.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;   /*sets the background image repeat*/
+    background-size: cover;  /*sets the background image size*/
 }
 
 #Machine-Learning-page{
-    background-image: url(../images/machine-learning.jpg);
+    background-image: url(../images/machine-learning.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
 
 #Deep-learning-page{
-    background-image: url(../images/brain.jpg);
+    background-image: url(../images/brain.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
 
 #Computer-vision-page{
-    background-image: url(../images/computer\ vision.jpg);  
+    background-image: url(../images/computer\ vision.jpg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
 
 #NLP-page{
-    background-image: url(../images/NLP.jpeg);
-}
-
-
-
-                                    /* costumizer la navigaion bar */
-
-.nav-bar{                   /*customiser la navbar*/
-    width: 100%;     
-    height: 80px;    
-    background-color: rgba(75, 130, 194, 0.2); /*ajouter un background couleur*/
-    backdrop-filter: blur(5px);    /*ajouter un effet blur*/
-    border-radius: 20px;           
-    display: flex;                  /*pour que le navbar soit en flex*/
-    justify-content: space-between;    /*pour que le navbar soit en space between*/
-    align-items: center;                /*pour que le navbar soit en align center*/
-}
-
-.nav-left a img{         /*pour le LOGO de la gauche navbar*/    /*customiser l'image du logo*/
-    width: 50px;
-    height: 50px; 
-    margin-left: 20px; 
-}
-
-.nav-right{     /*pour le menu de droite navbar*/
-    display: flex;              /*pour que le navbar soit en flex*/
-    justify-content: space-around;  /*pour que le navbar soit en space around*/
-    align-items: center;            /*pour que le navbar soit en align center*/
-}
-
-.nav-right a{    /*pour les liens de droite navbar*/
-    font-family : 'Roboto', sans-serif;    /*ajouter une police*/
-    margin-right: 60px;    /*ajouter un margin a droit*/
-    font-size: 20px;   /*ajouter une taille de police*/
-    color: rgb(255, 255, 255);   /*ajouter une couleur*/
-    font-weight: bold;     /*ajouter un poids*/
-}
-
-.nav-right a#seleced, a#seleced1, a:hover{   /*pour les liens de droite navbar quand ils sont hover par le cursor sauf les liens selectionnés sont initialisé avec cette coleur*/
-    color: #4b82c2;
+    background-image: url(../images/NLP.jpeg);  /*sets the background image*/
+    background-position: center;  /*sets the background image position*/
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
 
 .dropdown li{  /*pour les liens de dropdown navbar*/
-    list-style-type: none;  /*pour enlever les points de la liste*/
-    margin-bottom: 10px;    /*ajouter un margin en bas*/
-    transition: 0.3s ease;   /*ajouter une transition*/
+    list-style-type: none;  /*removes the list style*/
+    margin-bottom: 10px;   /*sets the margin of the li*/
+    transition: 0.3s ease;  /*sets the transition of the li*/
 }
 
-.dropdown {     /*pour les dropdown navbar*/
-    background-color: rgba(75, 130, 194, 0.2);      /*ajouter un background couleur*/
-    width: 210px;    /*ajouter une largeur*/
-    padding: 20px;   /*ajouter un padding*/
-    position: absolute;                         /*pour que le dropdown soit en absolute*/  
-    display: none;                              /*pour que le dropdown soit caché en debut*/
-    border-radius: 8px;                         /*ajouter un border radius*/
+.dropdown {  /*pour les liens de dropdown navbar*/
+    background-color: rgba(75, 130, 194, 0.2);  /*sets the background color of the dropdown*/
+    width: 210px;   /*sets the width of the dropdown*/
+    padding: 20px;   /*sets the padding of the dropdown*/
+    position: absolute;     /*sets the position of the dropdown*/   
+    display: none;   /*sets the display of the dropdown*/
+    border-radius: 8px;  /*sets the border radius of the dropdown*/
 }
 
-.services:hover .dropdown {         /*pour que le dropdown apparaisse quand je survole le lien*/
-    display: block;                 /*metre le display block pour la lis apparaisse apres le hover*/
+
+a#les-sousDomains{  
+    position: relative;   /*sets the position of the a*/
 }
 
-.headline-container{   /*customizer le container pour le headline titre et le placer sur sa place (home page)*/
+.services:hover .dropdown {  /*making the dropdown appear when hovering over the services link*/
+    display: block;  /*sets the display of the dropdown after the hover*/
+}
+
+.nav-bar{     
+    width: 100%;     /*sets the width of the navbar*/
+    height: 80px;    /*sets the height of the navbar*/
+    background-color: rgba(75, 130, 194, 0.2);  /*sets the background color of the navbar*/
+    backdrop-filter: blur(5px);    /*sets the blur of the navbar*/
+    border-radius: 20px;            /*sets the border radius of the navbar*/
+    display: flex;                  /*sets the display of the navbar*/
+    justify-content: space-between;     /*sets the justify content of the navbar*/
+    align-items: center;               /*sets the align items of the navbar*/
+}
+
+.nav-left a img{    /*sets the logo of the navbar*/
+    width: 50px;     /*sets the width of the logo*/
+    height: 50px;     /*sets the height of the logo*/
+    margin-left: 20px;  /*sets the margin of the logo*/
+}
+
+.nav-right{  /*sets the navbar right*/
+    display: flex;  /*sets the display of the navbar right*/
+    justify-content: space-around;  /*sets the justify content of the navbar right to make space around them*/
+    align-items: center;   /*sets the align items of the navbar right to center*/
+}
+
+.nav-right a{    /*sets the links of the navbar right*/
+    font-family : 'Roboto', sans-serif;  /*sets the font family of the links of the navbar right*/
+    margin-right: 60px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right a#seleced, a#seleced1, a:hover{   /*sets the color of the links of the navbar right when hovering over them except the selected ones*/
+    color: #4b82c2;
+}
+
+.headline-container{   /*sets the container for the headline and placing it on it's place (home page)*/
     color: aliceblue;
     width: 590px;
     height: 300px;
@@ -108,258 +123,184 @@ header{   /*costumizer le header*/
     padding-right: 10px;
     border-radius: 40px;
     background-color: rgba(75, 130, 194, 0.2);
-    display: flex;            /*pour que le container soit en flex*/
-    flex-direction: column;    /*pour que le container soit en column*/
-    justify-content: center;   /*pour que le container soit en justify center*/
-    position: relative;       /*pour que le container soit en relative*/
-    top: 130px;               /*pour que le container soit en top 130px*/
-    left: 41%;               /*pour que le container soit en left 41%*/
-    animation: animation-headers1 1s ease 0s 1;   /*pour que le container soit en animation*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    left: 41%;
 }
 
-@keyframes animation-headers2 {   
-    0.0%{  /*pour le premier frame*/
-        transform: translate(-200px, -60px);  /*pour que le container soit en translate(-200px, -60px) commance a partir -200px,-60px*/
-        opacity: 0;  /*pour que le container soit en opacity 0*/
-    } 
-    100%{  /*pour le dernier frame*/ 
-        transform: translate(0px);  /*pour que le container soit en translate(0px) et retourne a sa place*/
-        opacity: 1;  /*pour que le container soit en opacity 1 et apparaisse*/
-    } 
-}
-
-@keyframes animation-headers1 {   
-    0.0%{  /*pour le premier frame*/
-        transform: translate(280px);  /*pour que le container soit en translate(280px) commance a partir 280px*/
-        opacity: 0;  /*pour que le container soit en opacity 0*/
-    } 
-    100%{  /*pour le dernier frame*/ 
-        transform: translate(0px);  /*pour que le container soit en translate(0px) et retourne a sa place*/
-        opacity: 1;  /*pour que le container soit en opacity 1 et apparaisse*/
-    } 
-}
-
-@keyframes animation-delay-appariasse {   
-    0.0%{  /*pour le premier frame*/
-        opacity: 0;  /*pour que le container soit en opacity 0*/
-    } 
-    20%{  
-        opacity: 0;
-    }
-    100%{  /*pour le dernier frame*/ 
-        opacity: 1;  /*pour que le container soit en opacity 1 et apparaisse*/
-    } 
-}
-
-.headline2-container{      /*customizer le container pour le headline titre et le placer sur sa place (les pages des sous-domaines )*/
+.headline2-container{    /*sets the container for the headline and placing it on it's place (sous-domaines page)*/
     color: rgb(182, 190, 197);
     width: 400px;
     padding: 40px;
-    position: relative;    /*pour que le container soit en relative*/
-    left: -38px;           /*pour que le container soit en left -38px*/
-    animation: animation-headers2 1s ease 0s 1;
+    position: relative;
+    left: -38px;
 }
 
-h1.headline{      /*customizer le headline titre*/
-    font-family: 'Roboto', sans-serif;    /*ajouter une police*/
-    font-size: 60px;                      /*ajouter une taille de police*/
-    font-weight: bold;                    /*ajouter un poids bold*/
-    animation: animation-delay-appariasse 2s ease 0s 1;  /*pour que le titre apparaisse aprés le contenaire arrive*/
+.headline{  /*sets the family font of the title of the pages*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
 }
 
-p.headline{
-    animation: animation-delay-appariasse 3s ease 0s 1; /*pour que le pargrahe apparaisse aprés le contenaire arrive*/
+.headline-container p{  /*sets the family font of the text of the headline pages*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
 }
 
-a.headline{
-    animation: animation-delay-appariasse 4s ease 0s 1; /*pour que le button apparaisse aprés le contenaire arrive*/
+.btn{ /*sets the family font of the button (savoir plus)*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b82c2;
+    text-decoration: none;
 }
 
-.btn{           /*customizer le bouton 'savoir plus'*/
-    font-family: 'Roboto', sans-serif;   /*ajouter une police*/
-    font-size: 16px;                       /*ajouter une taille de police*/
-    font-weight: bold;                     /*ajouter un poids bold*/
-    color: #4b82c2;                     /*ajouter une couleur*/
-    text-decoration: none;                /*enlever le text decoration (parceque il est un lien)*/
-}
+                                    /*pour the main of the page */
 
-
-
-                                              /*pour the main of the page */
-
-
-main{                           /*customizer le main*/
-    margin: 20px 80px;           /*ajouter un margin 20px pour en top et en bas et 80px a gauche et a droite*/
-    padding: 20px 40px;          /*ajouter un padding*/
-    background-color: rgba(75, 130, 194, 0.3);   /*ajouter un background couleur avec une opacity*/
-    backdrop-filter: blur(5px);     /*ajouter un effet blur*/
-    border-radius: 20px;       /*ajouter un border radius*/
-}
-
-html{                       /*customizer le html*/
-    scroll-behavior: smooth;   /*ajouter un scroll smooth*/
-    background-image: url(../images/abstract-background-with-low-poly-design.jpg); /*ajouter une image de fond*/
-    background-position: center; /*ajouter une position de l'image de fond*/
-    background-repeat: no-repeat;  /*ajouter une repetition de l'image de fond*/ 
-    background-size: cover;  /*ajouter une taille de l'image de fond*/
-    background-attachment: fixed; /*ajouter une image de fond fixe*/
-}
-
-main h1{            /*customizer tous les h1 trouver sur le main*/
-    text-align: center;           /*centrer le titre*/
-    font-family: 'Roboto', sans-serif;      /*ajouter une police*/
-    font-size: 30px;                        /*ajouter une taille de police*/
-    font-weight: bold;                      /*ajouter un poids bold*/
-    margin: 60px auto;                     
-    padding: 20px;                          
-    background-color: rgba(75, 130, 194, 0.7);            /*ajouter un background couleur avec une 0.7 de opacity*/
-    backdrop-filter: blur(5px);                            /*ajouter un effet blur*/
+main{  /*sets the margin main of the page*/
+    margin: 0 80px;
+    margin: 20px 80px;
+    padding: 20px 40px;
+    background-color: rgba(75, 130, 194, 0.3);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
-    width: 600px;                                          /*ajouter une largeur*/
-    animation: scroll 0.01s ease 0s 1;                   /*ajouter une animation*/
-    animation-timeline: comeup;                         /*ajouter une animation timeline responsive avec le scrolling*/
 }
 
-@scroll-timeline comeup {  /*customizer le timeline responsive*/
-    time-range: 1s;   /*ajouter un time range*/
-    start: selector(#h1-fade) end 1;    /*ajouter un start et un end de l'annimation*/
-    end: selector(#hfade-pargraph) start 0;    
+html{  /*sets the background of the pages */
+    scroll-behavior: smooth;  /*sets the scroll behavior of the page run smoothely*/
+    background-image: url(../images/abstract-background-with-low-poly-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-@keyframes scroll{  /*customizer l'animation*/
-    0%{
-        transform: translate(0,100px);  /*pour que le titre soit en translate(0,100px)*/
-        opacity: 0;  /*pour que le titre soit en opacity 0 en debut*/
-    }
-    100%{
-        transform: translate(0px);  /*pour que le titre soit en translate(0px) et retourne a sa place*/
-        opacity: 1;  /*pour que le titre soit en opacity 1 et apparaisse*/
-    }
-
+.diffirent-containers{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
-h2{              /*customizer tous les h2*/
-    font-family: 'Roboto', sans-serif;  
+.diffirent-containers h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-h3{           /*customizer tous les h3*/
+.diffirent-containers h3{
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
-p{            /*customizer tous les paragraphes*/
+.diffirent-containers p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 10px;
     font-size: 16px;
+    margin-top: 10px;
 }
 
-a{         /*enlever la decoration sur tout les liens*/
-    text-decoration: none;
-}
-
-.diffirent-containers{    /*customizer le container pour les diffirents sections (title+paragraphes) */
-    background-color: rgba(255, 255, 255, 0.2);  /*ajouter un background couleur avec une 0.2 de opacity*/
-    backdrop-filter: blur(5px);                    /*ajouter un effet blur*/
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    /* animation: scroll 1s ease 0s 1;
-    animation-timeline: comeup; */
-}
-
-.diffirent-containers h2{     /*customizer tous les h2 trouver dans le 'diffirent-containers' contenaire*/
-    text-align: center;       /*centrer le titre*/
-    font-size: 22px;          /*ajouter une taille de police*/
-}
-
-.circles-container{          /*mettre les deux circle dans le meme ligne avec flex*/
+.circles-container{
     display: flex;
-    justify-content: space-evenly;     /*pour que les deux circle soit en space-evenly*/
-    align-items: center;              /*pour que les deux circle soit centrer*/
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.circle-container{                /*customizer cette contenaire pour faire une circle background contient un titre et paragraphe*/
-    background-color: rgba(75, 130, 194, 0.8);    /*ajouter un background couleur avec une 0.8 de opacity*/
-    backdrop-filter: blur(5px);                     /*ajouter un effet blur*/
-    border-radius: 50%;                            /*ajouter un 50% de border radius pour met le background circle */
-    width: 270px;                                  /*il suffit de mettre le width et le height en egalité pour avoir une cirlce parfait*/
-    height: 270px;      
-    display: flex;                               /*mettre le contenaire en flex pour manipuler la postion de titre et sa paragraphe*/
-    flex-direction: column;                     /*pour que le contenaire soit en column*/
-    justify-content: center;                   /*pour que le contenaire soit en justify center*/
-    align-items: center;                      /*pour que le contenaire soit en align center*/
+.circle-container{
+    background-color: rgba(75, 130, 194, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     margin: 20px;
 }
 
-.diffirent-containers img{    /*customizer les images trouver dans le 'diffirent-containers' contenaire*/
-    display: block;          /*pour que l'image soit en block*/
-    margin: auto;            /*pour que l'image soit centrer*/
+.diffirent-containers img{
+    display: block;
+    margin: auto;
 }
- 
-img.pictures{               /*customizer les images qui ont la classe 'pictures'*/
+
+img.pictures{
     margin-top: 90px;
     margin-bottom: 90px;
     width: 700px;
 }
 
-.squars-container{          /*customizer le container 'squars-container' pour avoir deux autres conteniares à l'intérieur*/
-    display: flex;  
+.squars-container{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.diffirent-containers ul{    /*customizer les ul trouver dans le 'diffirent-containers' contenaire*/
+.diffirent-containers ul{
     list-style-type: disc;
     margin: 10px 0px 0px 30px;
     padding: 0;
 }
 
 
-#formule1, #formule2{    /*customizer les deux formules mathematique*/     /*je peux la faire avec une class mais je voulais just essayer avec les id (autant que j'ai que deux formules)*/
-    text-align: center;     /*centrer la formule*/
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;   /*ajouter une police*/  
-    font-size: 22px;       /*ajouter une taille de police*/ 
-    font-weight: bold;      /*ajouter un poids bold*/
+#formule1, #formule2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.two-columns{        /*customizer ce contenaire pour etre capable e contenir deux conenaires 'colum'*/
+.two-columns{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }  
 
-.colum:nth-child(2){   /*customizer le deuxième contenaire 'colum'*/
-    border-left: 2px solid black;  /*ajouter une bordure gauche pour mettre la séparation*/
+.colum:nth-child(2){
+    border-left: 2px solid black;
     margin-left: 60px;
     padding-left: 20px;
 }
 
-.colum h3{         /*customizer les h3 trouver dans le 'colum' contenaire*/
-    color: red; 
+.colum p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-.clustering-graphes img{   /*customizer les images trouver dans le 'clustering-graphes' contenaire*/
+.colum h3{
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clustering-graphes img{
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
-    display: block;     /*pour que l'image soit en block*/
-    margin: 20px auto;      /*pour que l'image soit centrer et avoir une margin de top et en bas de 20px*/
+    display: block;
+    margin: 20px auto;
     height: 280px;
     width: 390px;
 }
 
-.row1-container{   /*Cutomizer ce contenaire pour etre capable de manipuler les photos et les mettres organizer*/
-    display: flex;     /*mettre le contenaire en flex pour manipuler la postion des photos*/
-    justify-content: space-between;   /*pour que les photos soit en space-between*/
-    align-items: center;           /*pour que les photos soit centrer*/
-    margin: 20px 0;              /*ajouter une margin de 20px en haut et en bas*/
+.row1-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.colum img{   /*customizer les images trouver dans le 'colum' contenaire*/
+.colum img{
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     display: block;
@@ -367,7 +308,7 @@ img.pictures{               /*customizer les images qui ont la classe 'pictures'
     width: 400px;
 }
 
-.squar{  /*customizer ce contenaire pour mettre des paragraphe dans des rectangles avec background color*/
+.squar{
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(75, 130, 194, 0.3);
@@ -376,10 +317,10 @@ img.pictures{               /*customizer les images qui ont la classe 'pictures'
     padding: 10px;
     width: 270px;
     height: 220px;
-    text-align: left;     /*mettre le texte commance de gauche*/
+    text-align: left;
 }
 
-.big-squars{  /*customizer ce contenaire pour mettre des paragraphe dans des rectangles avec background color (just comme le 'squar' contenaire mais grand*/
+.squars{
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: 4px solid rgba(75, 130, 194, 0.3);
@@ -389,32 +330,100 @@ img.pictures{               /*customizer les images qui ont la classe 'pictures'
     text-align: left;
 }
 
-.big-squars h3{ /*centrer les h3 trouver dans le 'big-squars' contenaire*/
+.squars h3{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
+.squars p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
 
-.big-squars ul{  /*customizer les ul trouver dans le 'big-squars' contenaire*/
+.squars ul{
     list-style-type: disc;
     margin: 10px 0px 0px 20px;
     padding: 0;
 }
 
-.big-squars li:first-child{  /*changer la couleur de premier li trouver dans le 'big-squars' contenaire en rouge*/
+.squars li:first-child{
     color: red;
 }
 
-img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les mettres a droit de paragraphe associer*/
+.circlegraph{
     height: 200px;
-    float: right;  /*mettre la photo a droit de texte et le mettre ce dernier complete le vide autoure de la photo*/
-} 
-
-.definition-container h2{  /*ajouter un marginf de top et grander la police pour toutes les h2 trouver dans le 'definition-container' contenaire*/
-    font-size: 30px; 
-    margin-top: 20px;
+    float: right;
 }
 
-.sous-domain-container{  /*customizer ce contenaire pour positioner un titre, une photo, une pargraphe et un lien*/
+
+
+.definition-container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.definition-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.definition-container figure{
+    margin-top: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    padding: 4px;
+    margin: auto;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.definition-container figure img{
+    width: 100%;
+    height: 220px;
+}
+
+.definition-container figure figcaption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: italic;
+    margin-top: 10px;
+}
+
+.rectangle-container{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    
+}
+
+main h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: rgba(75, 130, 194, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 600px;
+
+}
+
+.sous-domain-container{
     width: 600px;
     height: 190px;
     margin: 10px;
@@ -424,12 +433,21 @@ img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les 
     border-radius: 20px;
 }
 
-.sous-domain-container h2{ /*customizer les h2 trouver dans le 'sous-domain-container' contenaire*/
+.sous-domain-container h2{
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.sous-domain-container img{ /*customizer les images trouver dans le 'sous-domain-container' contenaire*/
+.sous-domain-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sous-domain-container img{
     margin: 10px;
     float: left;
     width: 250px;
@@ -438,7 +456,7 @@ img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les 
     top: -5px;
 }
 
-.les-sous-domain-container{ /*positionner les contenaire des sous domaines trouver a l'interieure en deux par deux*/
+.les-sous-domain-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -446,9 +464,7 @@ img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les 
     margin: 40px 0;
 }
 
-    /*mettre les photo des outils dans une form avec une arriere plan dans chaque outil*/
-
-.tools-container{ /*mettre les contenaire trouver a l'interieur en row*/
+.row-tools-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -456,7 +472,7 @@ img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les 
     margin: 40px 0;
 }
 
-.one-tool-container{   /*cutomizer l'arriere plan d'une photo d'un outil*/
+.one-tool-container{
     width: 200px;
     height: 90px;
     margin: 10px;
@@ -464,19 +480,18 @@ img.circlegraph{ /*customizer les images qui ont la classe 'circlegraph' et les 
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    display: flex;   /*mettre le contenaire en flex pour centrer la photo*/
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.one-tool-container img{ /*cutomizer la taille de la photo*/
+.one-tool-container img{
     width: 100%;
     height: 100%;
 }
 
-                              /*footer section*/
 
-footer{ /*customizer le footer et le mettre dans trois colonnes*/
+footer{
     width: 100%;
     height: 400px;
     background-color: rgba(75, 130, 194, 0.7);
@@ -486,11 +501,11 @@ footer{ /*customizer le footer et le mettre dans trois colonnes*/
     border-top-left-radius: 5%;
     display: flex;
     flex-direction: row;
-    position: relative; /*pour manipuler la postion a partir de sa initial position*/
-    bottom: -30px;  /*pour que le footer soit au dessus de le button de 'scroll up'*/
+    position: relative;
+    bottom: -30px;
 }
 
-.footer-containers{ /*customizer les contenaires du footer*/
+.footer-containers{
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -498,13 +513,13 @@ footer{ /*customizer le footer et le mettre dans trois colonnes*/
     margin: 20px 50px;
 }
 
-.footer-containers img{ /*customizer les images trouver dans le 'footer-containers' contenaire*/
+.footer-containers img{
     width: 40px;
     height: 40px;
     margin: 5px;
 }
 
-.footer-containers ul{ /*customizer les ul trouver dans le 'footer-containers' contenaire*/
+.footer-containers ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -512,7 +527,7 @@ footer{ /*customizer le footer et le mettre dans trois colonnes*/
     margin-top: 20px;
 }
 
-.footer-containers li{  /*customizer les li trouver dans le 'footer-containers' contenaire*/
+.footer-containers li{
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -520,11 +535,12 @@ footer{ /*customizer le footer et le mettre dans trois colonnes*/
     margin-bottom: 20px;
 }
 
-a.footer-Links{   /*customizer les liens de footer*/
-    color: rgb(47, 44, 50);
+a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
 }
 
-.social-media-container{ /*customizer le contenaire des reseaux sociaux et les mettre en bas*/
+.social-media-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -532,40 +548,44 @@ a.footer-Links{   /*customizer les liens de footer*/
     top: 60px;
 }
 
-h3#explor{   /*customizer le titre 'explorer'*/
+#explor{
     margin: 0 auto;
 }
 
-#gmail1, #gmail2{ /*customizer les images des gmail*/
+#gmail1, #gmail2{
     width: 28px;
     height: 28px;
 }
 
-.gmail-a{ /*customizer les liens des gmail et mettre le text au meme ligne avec la photo de gmail*/
+.gmail-a{
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.footer-containers h5{ /*customizer les h5 trouver dans le 'footer-containers' contenaire*/
+.footer-containers h5{
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
 }
 
-.footer-containers h3{ /*customizer les h3 trouver dans le 'footer-containers' contenaire*/
+.footer-containers h3{
+    font-family: 'Roboto', sans-serif;
     color: rgb(175, 200, 228);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
-.footer-containers a:hover{ /*mettre les liens de footer en coleur blanc quand on hover sur ils*/
+.footer-containers a:hover{
     color: #ffffff;
 }
 
-.top {      /*customizer le button de 'scroll up'*/
-    --offset: 100px;  
-    position: sticky;  /*pour que le button reste au dessus et a droit de la page*/
-    bottom: 30px;  
+.top {
+    --offset: 100px;
+    position: sticky;
+    bottom: 30px; 
     left: 1450px;
-    margin-top: calc(100vh + var(--offset)); /*pour que le button apparaise quand je faites défiler vers le bas à partir de l'en-tête*/
+    margin-top: calc(100vh + var(--offset));
     padding: 10px;
     background: rgb(255, 255, 255);
     border-radius: 40%;
