@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">  <!-- Appel du css -->
     </head>
     <body>
-        
+        <div id="progress"></div>
         <header id="Deep-learning-page"> <!-- Entête du site -->
             <nav class="nav-bar"> <!-- Menu du site -->
 
@@ -43,10 +43,10 @@
 
         <main>  <!-- Contenu principal -->
 
-            <h1>Deep Learning</h1>    <!-- Titre de la page -->
+            <h1 id="h1-fade">Deep Learning</h1>    <!-- Titre de la page -->
  
-            <div class="diffirent-containers"> <!-- Contenaire 1-->
-                <h2>Qu’est que le machine learning ?</h2>
+            <div class="diffirent-containers" id="stop-fade-container"> <!-- Contenaire 1-->
+                <h2>Qu'est-ce que le Deep Learning ?</h2>
                 <p>Le deep learning ou l’apprentissage automatique est un ensemble de méthode de l’apprentissage automatique qui s'appuie sur un réseau de neurones artificiels s'inspirant du cerveau humain. Ce réseau est composé de dizaines, voire de centaines de « couches » de neurones, chacune recevant et interprétant les informations de la couche précédente. Le système apprendra par exemple à reconnaître les lettres avant de s'attaquer aux mots dans un texte ou détermine s'il y a un visage sur une photo avant de découvrir de quelle personne il s'agit. Il s'agit d'un domaine qui a permis des progrès importants et rapides dans les domaines de l'analyse du signal sonore ou visuel et notamment de la reconnaissance faciale, de la reconnaissance vocale, de la vision par ordinateur, du traitement automatisé du langage.</p>
                 <div class="clustering-graphes"> <!-- Graphes -->
                     <div class="row1-container"> <!--une ligne des graphe -->
@@ -59,6 +59,7 @@
                         <img src="images/image-removebg-preview(5).png" alt="deep-learning">
                         <img src="images/image-removebg-preview(6).png" alt="deep-learning">
                     </div>
+                    <p>Chaque neurone artificiel représenté dans l’image précédente par un rond, peut être vu comme un modèle linéaire. En interconnectant les neurones sous forme de couche, nous transformons notre réseau de neurones en un modèle non-linéaire très complexe.</p>
                     <div class="row1-container"> <!--une ligne des graphe -->
                         <img src="images/image-removebg-preview(7).png" alt="deep-learning">
                         <img src="images/image-removebg-preview(8).png" alt="deep-learning">
@@ -69,11 +70,30 @@
                         <img src="images/image-removebg-preview(11).png" alt="deep-learning">
                         <img src="images/image-removebg-preview(12).png" alt="deep-learning">
                     </div>
+                    <p>Pour illustrer le concept, prenons un problème de classification entre chien et chat à partir d’image. Lors de l’apprentissage, l’algorithme va ajuster les poids des neurones de façon à diminuer l’écart entre les résultats obtenus et les résultats attendus. Le modèle pourra apprendre à détecter les triangles dans une image puisque les chats ont des oreilles beaucoup plus triangulaires que les chiens.</p>
                     
                 </div>
             </div>
 
             <div class="diffirent-containers"> <!-- Contenaire 2-->
+                <h2>A quoi sert le Deep Learning ?</h2>
+                <p>Les modèles de Deep learning ont tendance à bien fonctionner avec une grande quantité de données alors que les modèles d’apprentissage automatique plus classique cessent de s’améliorer après un point de saturation.</p>
+                <img src="images/why-deep-learning.png" alt="why-deep-learning" class="pictures">
+                <p>Au fil des années, avec l’émergence du big data et de composants informatiques de plus en plus puissant, les algorithmes de Deep Learning gourmands en puissance et en données ont dépassé la plupart des autres méthodes. Ils semblent être prêt à résoudre bien des problèmes : reconnaître des visages, vaincre des joueurs de go ou de poker, permettre la conduite de voitures autonomes ou encore la recherche de cellules cancéreuses.</p>
+            </div>
+
+            <div class="diffirent-containers"> <!-- Contenaire 3-->
+                <h2>Le Deep Learning comme solution dans le e-commerce</h2>
+                <p>Il est évident que le secteur du commerce électronique génère de grandes quantités de données. Les entreprises, les commerçants et les distributeurs sont conscients que les solutions de Big Data pour gérer leurs opérations rendront leur activité plus précieuse. Malgré l’irruption de toutes ces solutions innovantes, le Big Data peut représenter une bénédiction ou une malédiction, selon la façon dont il est utilisé et appliqué.</p>
+                <p>La révolution de l’intelligence artificielle vise à faciliter la gestion de cette énorme quantité de données, grâce à des technologies intelligentes comme le Deep learning. Elle est essentielle, car elle fournit des éléments pour une meilleure analyse des données.</p>
+                <p>Dans un cas pratique, l’analyse par l’IA permet à une boutique en ligne de proposer plus facilement des produits intéressants à ses clients, de mettre en évidence leurs préférences et de leur apporter une attention personnalisée. Pour ce faire, le Deep learning automatise ce que l’on appelle l’analyse prédictive. Grâce à cette dernière, les clients peuvent recevoir des suggestions lors d’un achat.</p>
+                <p>L’apprentissage profond définit un style lorsqu’il s’agit de faire du commerce électronique. En effet, il ne s’agit pas de créer des sites en ligne qui attirent de grandes proportions d’acheteurs. L’objectif est d’envoyer des messages clairs et individualisés à chacun d’eux.</p>
+                <p>Le Big Data est soumis à une analyse approfondie grâce au Deep learning, ce qui conduit à faciliter le processus d’achat des clients. Les algorithmes d’apprentissage en profondeur aident l’entreprise à obtenir une meilleure expérience et à garder une trace de ceux qui ont visité son site.</p>
+                <p>L’apprentissage profond arrive pour faciliter l’expansion du commerce électronique. Les ventes en ligne sont stimulées par les tendances technologiques telles que les chatbots.</p>
+                <p>D’une certaine manière, le Deep Learning redéfinit le commerce en ligne et on n’est qu’aux balbutiements. Par conséquent, ceux qui l’adoptent auront plus d’avantages.</p>
+            </div>
+
+            <div class="diffirent-containers"> <!-- Contenaire 4-->
                 <h3>Ressources:</h3> <!-- Titre -->
                 <ul> <!-- Liste des ressources -->
                     <li>Statquest</li>
@@ -94,32 +114,35 @@
         <footer id="sous-domain-footer">  <!-- Pied de page --> 
 
             <div class="footer-containers">  <!-- Conteneur 1 du pied de page -->
-                 <h3>Qui sommes-nous ?</h3>
-                 <p>Les machines dotées d'une intelligence artificielle mémorisent des comportements. Cet apprentissage se réalise à l'aide de bases de données et d'algorithmes. </p>
-                 <h3>what we do?</h3>
-                 <p>L'intelligence artificielle (IA, ou AI en anglais pour Artificial Intelligence) consiste à mettre en œuvre un certain nombre de techniques visant à permettre aux machines d'imiter une forme d'intelligence réelle. L'IA se retrouve implémentée dans un nombre grandissant de domaines d'application.</p>
-             </div>
+                <h3>Qui sommes-nous ?</h3>
+                <p>Ce site est lancé en 08/04/2022 par les étudiants  ABDALLAH Abderraouf et BRAHMI Rachel Israa , de spécialité informatique général de l'université des sciences et technologies de Houari Boumediene.</p>
+                <h3>Sociétés</h3>
+                <p><b>USTHB:</b> L'université des sciences et de la technologie Houari-Boumédiène (USTHB), est une université située dans la commune de Bab Ezzouar à une quinzaine de kilomètres à l'est d'Alger en Algérie.</p>
+                <a href="https://www.usthb.dz/" target="_blank" class="footer-Links">En savoir plus</a>
+            </div>
  
              <div class="footer-containers"> <!-- Conteneur 2 du pied de page -->
                  <h3 id="explor">explorer</h3>   
                  <ul> <!-- Liste des liens -->
-                     <li><a href="index.html" class="hover-class">Accueil</a></li>
-                     <li><a href="index.html" class="hover-class">A propos</a></li>
-                     <li><a href="index.html" class="hover-class">Contact</a></li>
+                    <li><a href="index.html" class="hover-class  footer-Links">Accueil</a></li>
+                    <li><a href="Machine-Learning.html" class="footer-Links">Machine Learning</a></li>
+                    <li><a href="Deep-Learning.html" class="footer-Links">Deep Learning</a></li>
+                    <li><a href="Computer-Vision.html" class="footer-Links">Computer Vision</a></li>
+                    <li><a href="NLP.html" class="footer-Links">NLP</a></li>
                  </ul>
              </div>
  
              <div class="footer-containers"> <!-- Conteneur 3 du pied de page -->
                  <h3>contactez-nous:</h3>
                  <h5>Pour Buisness:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail1"></img>techylearn@gmail.com</a>
+                 <a href="mailto:techylearnPro@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail1"></img>techylearnPro@gmail.com</a>
                  <h5>Pour questions et report des problemes:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail2"></img>techylearn@gmail.com</a>
+                 <a href="mailto:techylearnFeedBakcs@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail2"></img>techylearnFeedBakcs@gmail.com</a>
  
                  <div class="social-media-container"> <!-- Conteneur des réseaux sociaux -->
-                     <a href="https://www.facebook.com/"><img src="images/facebook.png"></img></a>
-                     <a href="https://www.twitter.com/"><img src="images/twitter.png"></img></a>
-                     <a href="https://www.instagram.com/"><img src="images/instagram.png"></img></a>
+                     <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"></img></a>
+                     <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png"></img></a>
+                     <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"></img></a>
                  </div>
 
              </div>

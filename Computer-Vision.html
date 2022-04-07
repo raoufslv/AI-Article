@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">  <!-- Appel du fichier CSS -->
     </head>
     <body>  <!-- Corps du site -->
-        
+        <div id="progress"></div>
         <header id="Computer-vision-page">  <!-- Entête du site -->
             <nav class="nav-bar">  <!-- Menu du site -->
 
@@ -43,19 +43,52 @@
 
         <main>  <!-- continue du site -->
 
-            <h1>Computer Vision</h1> <!-- Titre de la page -->
+            <h1 id="h1-fade">Computer Vision</h1> <!-- Titre de la page -->
 
-            <div class="diffirent-containers">
-                <h2>Qu’est que le computer vision ?</h2>
+            <div class="diffirent-containers" id="stop-fade-container">
+                <h2>Qu’est-ce que la Computer Vision ?</h2>
                 <p>La vision par ordinateur (aussi appelée vision artificielle ou vision numérique) est un type d’ingénierie informatique. Elle consiste à apprendre aux ordinateurs à « voir » des images numériques telles que des photos et des vidéos. L'IA est capable de reconnaître une image, de la comprendre, et de traiter les informations qui en découlent. Pour beaucoup, la vision par ordinateur est l’équivalent, en termes d’IA, des yeux humains et de la capacité de notre cerveau à traiter et analyser les images perçues. Pour résumer, la vision artificielle consiste à la reproduction de la vision humaine par des ordinateurs.</p>
                 <img src="images/dama.png" alt="dama" class="pictures">
-
+                <div class="diffirent-containers">
+                    <h3>Détection :</h3>
+                    <p>Ici, l’objectif est de détecter sur une image la position de certains objets. Les objets « à détecter » ont été définis à l’avance, il n’est pas nécessaire d’en détecter d’autres.  La présence de ces objets est généralement représentée grossièrement par un rectangle et un nom sur l’image.</p>
                     <div class="row1-container">
                         <img src="images/kelb1.png" alt="kelb">
                         <img src="images/kelb2.png" alt="kelb">
                         <img src="images/kelb3.png" alt="kelb">
                     </div>
+                </div>
+                
 
+            </div>
+
+            <div class="diffirent-containers">
+                <h2>Quels sont les domaines d’application de la Computer Vision ?</h2>
+                <p>La Computer Vision est omniprésente dans la technologie d’aujourd’hui. Il est donc impensable d’en faire une liste exhaustive. De plus en plus, ce nombreux domaines et produits se basent sur la computer vision. Que ce soit le secteur automobile ou bien le secteur de la téléphonie en passant par le large secteur de la  sécurité, la computer vision nous est devenu indispensable pour notre développement technologique.</p>
+                <p>La suite de cet article a pour but de donner un aperçu de la grande diversité des domaines où la Computer Vision peut s’appliquer.</p>
+                <div class="diffirent-containers">
+                    <h3>Voitures autonomes :</h3>
+                    <p>Pour être capable de rouler sans conducteur, les voitures autonomes sont dotées de très nombreux capteurs, dont des caméras. Ces dernières filment l’environnement, notamment les panneaux de signalisation et le marquage au sol.</p>
+                    <p>La question que l’on peut alors se poser est de savoir si ces algorithmes sont suffisamment fiables et performants pour qu’on puisse leur confier d’aussi grandes responsabilités.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Reconnaissance faciale :</h3>
+                    <p>Beaucoup de smartphones proposent aujourd’hui d’être déverrouillés par reconnaissance faciale. Les algorithmes utilisés varient en fonction des marques mais ils sont aujourd’hui très performants. De telles méthodes sont aussi utilisées par Facebook, Google Photos ou Snapchat pour reconnaître les visages sur les photos. Suite à la pandémie du Covid19, nombreux sont les algorithmes à avoir été mis en défaut par la présence d’un masque sur le visage des utilisateurs. Aurait-on découvert le talon d’achille de Big Brother ?</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Imagerie médicale :</h3>
+                    <p>Sans s’être réellement imposée en tant que standard dans ce domaine, la Computer Vision montre des résultats plus que prometteurs dans la détection de maladie. Une équipe de chercheurs du MIT a notamment développé une IA rivalisant avec les médecins pour détecter précocement les cancers du sein en utilisant les mammographies des patients.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Google Maps :</h3>
+                    <p>Google utilise les images des panneaux prises par les google cars pour répertorier les noms de rue automatiquement. Le même procédé est appliqué aux panneaux de signalisation, notamment ceux de limitation de vitesse.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Tri des déchets :</h3>
+                    <p>Le robot Max-ai détecte et retire certains déchets indésirables en utilisant la Computer Vision. Ce genre de robot pourrait révolutionner la manière dont les déchets sont triés aujourd’hui.</p>
+                    <p>Par exemple, l’entreprise Captricity a développé un algorithme capable de lire et de comprendre des textes écrits à la main, grâce à des méthodes de Computer Vision, et de NLP.</p>
+                </div>
+                
             </div>
 
             <div class="diffirent-containers">
@@ -77,32 +110,35 @@
         <footer id="sous-domain-footer">  <!-- Footer du site -->
 
             <div class="footer-containers">  <!-- Conteneur 1 du footer -->
-                 <h3>Qui sommes-nous ?</h3>
-                 <p>Les machines dotées d'une intelligence artificielle mémorisent des comportements. Cet apprentissage se réalise à l'aide de bases de données et d'algorithmes. </p>
-                 <h3>what we do?</h3>
-                 <p>L'intelligence artificielle (IA, ou AI en anglais pour Artificial Intelligence) consiste à mettre en œuvre un certain nombre de techniques visant à permettre aux machines d'imiter une forme d'intelligence réelle. L'IA se retrouve implémentée dans un nombre grandissant de domaines d'application.</p>
-             </div>
+                <h3>Qui sommes-nous ?</h3>
+                <p>Ce site est lancé en 08/04/2022 par les étudiants  ABDALLAH Abderraouf et BRAHMI Rachel Israa , de spécialité informatique général de l'université des sciences et technologies de Houari Boumediene.</p>
+                <h3>Sociétés</h3>
+                <p><b>USTHB:</b> L'université des sciences et de la technologie Houari-Boumédiène (USTHB), est une université située dans la commune de Bab Ezzouar à une quinzaine de kilomètres à l'est d'Alger en Algérie.</p>
+                <a href="https://www.usthb.dz/" target="_blank" class="footer-Links">En savoir plus</a>
+            </div>
  
              <div class="footer-containers"> <!-- Conteneur 2 du footer -->
                  <h3 id="explor">explorer</h3>   
                  <ul>    <!-- Liste des liens -->
-                     <li><a href="index.html" class="hover-class">Accueil</a></li>
-                     <li><a href="index.html" class="hover-class">A propos</a></li>
-                     <li><a href="index.html" class="hover-class">Contact</a></li>
+                    <li><a href="index.html" class="hover-class  footer-Links">Accueil</a></li>
+                    <li><a href="Machine-Learning.html" class="footer-Links">Machine Learning</a></li>
+                    <li><a href="Deep-Learning.html" class="footer-Links">Deep Learning</a></li>
+                    <li><a href="Computer-Vision.html" class="footer-Links">Computer Vision</a></li>
+                    <li><a href="NLP.html" class="footer-Links">NLP</a></li>
                  </ul>
              </div>
  
              <div class="footer-containers">  <!-- Conteneur 3 du footer -->
                  <h3>contactez-nous:</h3>
                  <h5>Pour Buisness:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail1"></img>techylearn@gmail.com</a>
+                 <a href="mailto:techylearnPro@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail1"></img>techylearnPro@gmail.com</a>
                  <h5>Pour questions et report des problemes:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail2"></img>techylearn@gmail.com</a>
+                 <a href="mailto:techylearnFeedBakcs@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail2"></img>techylearnFeedBakcs@gmail.com</a>
  
                  <div class="social-media-container">   <!-- Conteneur des réseaux sociaux -->
-                     <a href="https://www.facebook.com/"><img src="images/facebook.png"></img></a>  <!-- Lien vers facebook -->
-                     <a href="https://www.twitter.com/"><img src="images/twitter.png"></img></a>  <!-- Lien vers twitter -->
-                     <a href="https://www.instagram.com/"><img src="images/instagram.png"></img></a>  <!-- Lien vers instagram -->
+                     <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"></img></a>  <!-- Lien vers facebook -->
+                     <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png"></img></a>  <!-- Lien vers twitter -->
+                     <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"></img></a>  <!-- Lien vers instagram -->
                  </div>
 
              </div>

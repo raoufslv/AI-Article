@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">  <!-- Appel du fichier CSS -->
     </head>
     <body>
-        
+        <div id="progress"></div>
         <header id="NLP-page">  <!-- Entête du site -->
             <nav class="nav-bar">  <!-- Menu du site -->
  
@@ -41,13 +41,47 @@
 
         <main> <!-- Contenu principal -->
 
-            <h1>Natural Language Processing</h1> 
+            <h1 id="h1-fade">Natural Language Processing</h1> 
 
-            <div class="diffirent-containers"> <!-- Conteneur 1 -->
+            <div class="diffirent-containers" id="stop-fade-container"> <!-- Conteneur 1 -->
                 <img src="images/circle-graph.png" alt="circle-graph" class="circlegraph"> <!-- Image du graphique -->
                 <h2>Le natural language processing (NLP), c'est quoi ?</h2> 
                 <p>Le natural language processing (NLP), ou traitement du langage naturel, est une branche de l’intelligence artificielle qui s’attache à comprendre le langage humain tel qu’il est écrit et/ou parlé. Pour ce faire, des programmes informatiques spécifiques sont développés.</p>
                 <p>En effet, un ordinateur typique réclame qu’on lui parle dans un langage de programmation bien précis, balisé, structuré, sans ambiguïté. Le langage naturel humain est, lui, imprécis, équivoque, confus. Pour permettre à un programme de comprendre le sens des mots, il faut employer des algorithmes capables d’analyser le sens et la structure pour "désambiguïser" les mots, de reconnaître certaines références, puis de générer du langage sur cette base.</p>
+            </div>
+
+            <div class="diffirent-containers">
+                <h2>À quelles problématiques répond le NLP ?</h2>
+                <p>Le NLP est terme assez générique qui recouvre un champ d’application très vaste. Voici les applications les plus populaires :</p>
+                <div class="diffirent-containers">
+                    <h3>Traduction automatique</h3>
+                    <p>Le développement d’algorithmes de traduction automatique a réellement révolutionné la manière dont les textes sont traduits aujourd’hui. Des applications, telles que Google Translator, sont capables de traduire des textes entiers sans aucune intervention humaine.Le langage naturel étant par nature ambigu et variable, ces applications ne reposent pas sur un travail de remplacement mot à mot, mais nécessitent une véritable analyse et modélisation de texte, connue sous le nom de Traduction automatique statistique (Statistical Machine Translation en anglais).</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Sentiment analysis</h3>
+                    <p>Aussi connue sous le nom de « Opinion Mining », l’analyse des sentiments consiste à identifier les informations subjectives d’un texte pour extraire l’opinion de l’auteur.</p>
+                    <p>De manière générale, l’analyse des sentiments permet de mesurer le niveau de satisfaction des clients vis-à-vis des produits ou services fournis par une entreprise ou un organisme. Elle peut même s’avérer bien plus efficace que des méthodes classiques comme les sondages. </p>
+                    <p>En effet, si l’on rechigne souvent à passer du temps à compléter de longs questionnaires, une partie croissante des consommateurs partage aujourd’hui fréquemment leurs opinions sur les réseaux sociaux. Ainsi, la recherche de textes négatifs et l’identification des principales plaintes permettent d’améliorer les produits, d’adapter la publicité et de réduire le niveau d’insatisfaction des clients.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Marketing</h3>
+                    <p>Ils s’appuient pour cela sur le comportement des internautes sur les sites, les réseaux sociaux et les requêtes aux moteurs de recherche. C’est grâce à ce type d’analyse que Google génère un profit non négligeable en proposant la bonne publicité aux bons internautes. Chaque fois qu’un visiteur clique sur une annonce, l’annonceur reverse jusqu’à 50 dollars !</p>
+                    <p>Les sources de données brutes pour cette analyse comprennent les journaux de ventes, les enquêtes et les médias sociaux …</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Chatbots</h3>
+                    <p>Les méthodes NLP sont au cœur du fonctionnement des Chatbots actuels. Bien que ces systèmes ne soient pas totalement parfaits, ils peuvent aujourd’hui facilement gérer des tâches standards telles renseigner des clients sur des produits ou services, répondre à leurs questions, etc. Ils sont utilisés par plusieurs canaux, dont l’Internet, les applications et les plateformes de messagerie. L’ouverture de la plateforme Facebook Messenger aux chatbots en 2016 a contribué à leur développement.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Autres domaines d’application</h3>
+                    <ul>
+                        <li>Classification de texte</li>
+                        <li>Reconnaissance de caractères</li>
+                        <li>Correction automatique</li>
+                        <li>Résumé automatique</li>
+
+                    </ul>
+                </div>
             </div>
 
             <div class="diffirent-containers"> <!-- Conteneur 2 -->
@@ -64,6 +98,31 @@
                     <li>les modèles dérivés et améliorés comme RoBERTa (Facebook), StructBERT (Alibaba), DeBERTa (Microsoft), DistilBERT (Hugging Face)</li>
                     <li>les modèles alternatifs comme GPT-2 et GPT-3 (OpenAI), XLNet (Université Carnegie Mellon), UniLM (Microsoft), et Reformer (Google).</li>
                 </ul>
+            </div>
+
+            <div class="diffirent-containers">
+                <h2>Quels sont les perspectives et enjeux du NLP ?</h2>
+                <p>Les règles qui régissent la transformation de texte en langage naturel en information ne sont pas faciles à comprendre pour les ordinateurs. </p>
+                <p>Parmi les principaux challenges :</p>
+                <div class="diffirent-containers">
+                    <h3>Ambiguïté</h3>
+                    <p>En langage naturel, les mots sont uniques mais peuvent avoir des significations différentes selon le contexte, ce qui entraîne une ambiguïté au niveau lexical, syntaxique et sémantique. Pour résoudre ce problème, le NPL propose plusieurs méthodes, telles que l’évaluation du contexte par exemple. Cependant, la compréhension de la signification sémantique des mots d’une phrase reste une tâche en cours de recherche.</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Synonymie </h3>
+                    <p>Un autre phénomène clé en langage naturel est le fait que nous pouvons exprimer la même idée avec différents termes qui dépendent également du contexte spécifique.</p>
+                    <p>Par exemple, les termes « grand » et « large » peuvent être synonymes pour décrire un objet ou un bâtiment, mais ils ne sont pas interchangeables dans tous les contextes :  « grand » peut signifier plus âgé.</p> 
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Coréférence</h3>
+                    <p>Les tâches de coréférence consistent à trouver toutes les expressions qui se réfèrent à la même entité. Il s’agit d’une étape importante pour de nombreuses tâches de NLP de haut niveau qui impliquent une compréhension du texte dans sa globalité, telles que le résumé de documents, la réponse à des questions et l’extraction d’informations. Ce problème a connu un renouveau avec l’introduction de techniques de pointe de Deep Learning .</p>
+                </div>
+                <div class="diffirent-containers">
+                    <h3>Style d’écriture</h3>
+                    <p>Selon la personnalité de l’auteur, ses intentions et émotions, une même idée peut être exprimée de diverses manières. </p>
+                    <p>Ainsi, alors que les humains peuvent facilement maîtriser une langue, l’ambiguïté et les caractéristiques imprécises des langues naturelles sont ce qui rend la NLP difficile à mettre en œuvre pour les machines.</p>
+                    <p>Vous souhaitez passer maître dans l’art du NLP ? La suite de notre dossier arrive vite ! Au programme du prochain épisode : comment représenter un mot par un vecteur grâce au Word Embedding ? </p>
+                </div>
             </div>
  
             <div class="diffirent-containers"> <!-- Conteneur 4 -->
@@ -84,33 +143,36 @@
 
         <footer id="sous-domain-footer">  <!-- Footer -->
 
-            <div class="footer-containers">  <!-- Conteneur 1 de footer --> 
-                 <h3>Qui sommes-nous ?</h3>
-                 <p>Les machines dotées d'une intelligence artificielle mémorisent des comportements. Cet apprentissage se réalise à l'aide de bases de données et d'algorithmes. </p>
-                 <h3>what we do?</h3>
-                 <p>L'intelligence artificielle (IA, ou AI en anglais pour Artificial Intelligence) consiste à mettre en œuvre un certain nombre de techniques visant à permettre aux machines d'imiter une forme d'intelligence réelle. L'IA se retrouve implémentée dans un nombre grandissant de domaines d'application.</p>
-             </div>
+            <div class="footer-containers">    <!-- une Contenaire d'une colonnes -->
+                <h3>Qui sommes-nous ?</h3>
+                <p>Ce site est lancé en 08/04/2022 par les étudiants  ABDALLAH Abderraouf et BRAHMI Rachel Israa , de spécialité informatique général de l'université des sciences et technologies de Houari Boumediene.</p>
+                <h3>Sociétés</h3>
+                <p><b>USTHB:</b> L'université des sciences et de la technologie Houari-Boumédiène (USTHB), est une université située dans la commune de Bab Ezzouar à une quinzaine de kilomètres à l'est d'Alger en Algérie.</p>
+                <a href="https://www.usthb.dz/" target="_blank" class="footer-Links">En savoir plus</a>
+            </div>
  
              <div class="footer-containers">  <!-- Conteneur 2 de footer -->
                  <h3 id="explor">explorer</h3>   
                  <ul>  <!-- Liste des liens -->
-                     <li><a href="index.html" class="hover-class">Accueil</a></li>  
-                     <li><a href="index.html" class="hover-class">A propos</a></li>
-                     <li><a href="index.html" class="hover-class">Contact</a></li>
+                    <li><a href="index.html" class="hover-class  footer-Links">Accueil</a></li>
+                    <li><a href="Machine-Learning.html" class="footer-Links">Machine Learning</a></li>
+                    <li><a href="Deep-Learning.html" class="footer-Links">Deep Learning</a></li>
+                    <li><a href="Computer-Vision.html" class="footer-Links">Computer Vision</a></li>
+                    <li><a href="NLP.html" class="footer-Links">NLP</a></li>
                  </ul>
              </div>
  
              <div class="footer-containers">  <!-- Conteneur 3 de footer -->
                  <h3>contactez-nous:</h3> 
                  <h5>Pour Buisness:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail1"></img>techylearn@gmail.com</a>  <!-- Lien vers le mail -->
+                 <a href="mailto:techylearnPro@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail1"></img>techylearnPro@gmail.com</a>  <!-- Lien vers le mail -->
                  <h5>Pour questions et report des problemes:</h5>
-                 <a href="https://www.gmail.com/" class="gmail-a"><img src="images/gmail.png" id="gmail2"></img>techylearn@gmail.com</a>  <!-- Lien vers le mail -->
+                 <a href="mailto:techylearnFeedBakcs@gmail.com" target="_blank" class="gmail-a footer-Links"><img src="images/gmail.png" id="gmail2"></img>techylearnFeedBakcs@gmail.com</a>  <!-- Lien vers le mail -->
  
                  <div class="social-media-container">  <!-- Conteneur des réseaux sociaux -->
-                     <a href="https://www.facebook.com/"><img src="images/facebook.png"></img></a>  <!-- Facebook -->
-                     <a href="https://www.twitter.com/"><img src="images/twitter.png"></img></a>  <!-- Twitter -->
-                     <a href="https://www.instagram.com/"><img src="images/instagram.png"></img></a>  <!-- Instagram -->
+                     <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"></img></a>  <!-- Facebook -->
+                     <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png"></img></a>  <!-- Twitter -->
+                     <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"></img></a>  <!-- Instagram -->
                  </div>
 
              </div>
