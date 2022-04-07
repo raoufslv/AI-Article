@@ -196,10 +196,15 @@ header{   /*costumizer le header*/
     animation: animation-headers2 1s ease 0s 1;
 }
 
+.CV{
+    left: 110Px;
+}
+
 h1.headline{      /*customizer le headline titre*/
-    font-family: 'Roboto', sans-serif;    /*ajouter une police*/
+    font-family: "Audiowide", sans-serif;    /*ajouter une police*/
     font-size: 60px;                      /*ajouter une taille de police*/
     font-weight: bold;                    /*ajouter un poids bold*/
+    letter-spacing: 2px;
     animation: animation-delay-appariasse 2s ease 0s 1;  /*pour que le titre apparaisse aprés le contenaire arrive*/
 }
 
@@ -230,6 +235,10 @@ main{                           /*customizer le main*/
     background-color: rgba(75, 130, 194, 0.3);   /*ajouter un background couleur avec une opacity*/
     backdrop-filter: blur(5px);     /*ajouter un effet blur*/
     border-radius: 20px;       /*ajouter un border radius*/
+}
+
+body{
+    font-family: "open sans", sans-serif;
 }
 
 html{                       /*customizer le html*/
@@ -296,15 +305,19 @@ h2{              /*customizer tous les h2*/
 }
 
 h3{           /*customizer tous les h3*/
-    font-family: 'Roboto', sans-serif;
+    font-family: Merriweather, sans-serif;
     font-weight: bold;
     font-size: 18px;
     margin-top: 10px;
 }
 
 p{            /*customizer tous les paragraphes*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
+    font-size: 16px;
+}
+li{
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -551,17 +564,16 @@ footer{ /*customizer le footer et le mettre dans trois colonnes*/
 .footer-containers ul{ /*customizer les ul trouver dans le 'footer-containers' contenaire*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
+    
 }
 
 .footer-containers li{  /*customizer les li trouver dans le 'footer-containers' contenaire*/
+    margin-left: 114px;
+    margin-top: 10px;
     list-style-type: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 a.footer-Links{   /*customizer les liens de footer*/
@@ -605,12 +617,13 @@ h3#explor{   /*customizer le titre 'explorer'*/
 }
 
 .top {      /*customizer le button de 'scroll up'*/
-    --offset: 100px;  
+    text-align: center;
+    --offset: 100px;
     position: sticky;  /*pour que le button reste au dessus et a droit de la page*/
     bottom: 30px;  
     left: 1450px;
     margin-top: calc(100vh + var(--offset)); /*pour que le button apparaise quand je faites défiler vers le bas à partir de l'en-tête*/
     padding: 10px;
     background: rgb(255, 255, 255);
-    border-radius: 40%;
+    border-radius: 50%;
   }
